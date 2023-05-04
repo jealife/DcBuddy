@@ -26,6 +26,7 @@ body::-webkit-scrollbar-thumb {
 
 
 body {
+    scroll-behavior: smooth;
     background: #f6fcff;
 }
 

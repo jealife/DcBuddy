@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:description" content="My simple Responsive DcBuddy page">
-        <meta property="og:image"
-            content="https://images.unsplash.com/photo-1620365602462-40d8f2cdd84c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGFnZW5jZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
-        <meta property="og:url"
-            content="https://dc-buddy.vercel.app/index.html">
-        <meta name="twitter:card" content="summary_large_image">
-        <link rel="icon" type="image/x-icon" href="desktop.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description" content="My simple Responsive DcBuddy page">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1620365602462-40d8f2cdd84c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGFnZW5jZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+    <meta property="og:url" content="https://dc-buddy.vercel.app/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/x-icon" href="desktop.png">
     <title>Dcbuddy</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -48,13 +48,18 @@
 
         <section class="hero w-full flex container">
             <div class="hero-container w-full justify-center flex align-center">
-                <div class="hero-items flex flex-1 justify-center">
+                <div class="hero-items flex flex-1 justify-center" data-aos="fade-up"data-aos-offset="200"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out">
                     <h1>
                         Custum <br>
                         <span>Pricing</span>
                     </h1>
                 </div>
-                <div class="hero-items flex flex-1 justify-center">
+                <div class="hero-items flex flex-1 justify-center" data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -65,8 +70,15 @@
         </section>
         <div class="header-btn">
             <div class="header-btn-container">
-                <a href="#" class=""> TRY IT FREE</a>
-                <a href="#" class=""> REQUEST A DEMO</a>
+                <a href="#" class=""  data-aos="zoom-in"
+                data-aos-delay="150"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-anchor-placement="top-center"> TRY IT FREE</a>
+                <a href="#" class=""  data-aos="zoom-in"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"> REQUEST A DEMO</a>
             </div>
         </div>
     </header>
@@ -78,10 +90,13 @@
                 <h3 class="uppercase">Choose the right plan for you</h3>
             </div>
             <div class="plan-cards mt-2 flex w-full ">
-                <div class="card flex flex-column">
+                <div class="card flex flex-column"  data-aos="zoom-in-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out">
                     <div class="top-card">
                         <div class="icon">
-                            <i class='bx bx-clinic bx-tada-hover' ></i>
+                            <i class='bx bx-clinic bx-tada-hover'></i>
                         </div>
                         <div class="card-title">
                             <h2 class="uppercase">Clinics</h2>
@@ -98,10 +113,13 @@
                         <a href="#" class="btn uppercase">Find out more</a>
                     </div>
                 </div>
-                <div class="card flex flex-column two">
+                <div class="card flex flex-column two"  data-aos="zoom-in-up"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out">
                     <div class="top-card">
                         <div class="icon">
-                            <i class='bx bx-building bx-tada-hover' ></i>
+                            <i class='bx bx-building bx-tada-hover'></i>
                         </div>
                         <div class="card-title">
                             <h2 class="uppercase">Surgery centers</h2>
@@ -118,12 +136,15 @@
                         <a href="#" class="btn uppercase">Find out more</a>
                     </div>
                 </div>
-                <div class="card flex flex-column">
+                <div class="card flex flex-column" data-aos="zoom-in-up"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out">
                     <div class="top-card">
                         <div class="icon">
                             <i class='bx bx-building-house bx-tada-hover'></i>
                         </div>
-                       
+
                         <div class="card-title">
                             <h2 class="uppercase">Hospitals</h2>
                         </div>
@@ -143,6 +164,15 @@
             </div>
         </div>
     </main>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

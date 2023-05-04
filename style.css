@@ -288,7 +288,11 @@ nav {
 .card-btn .btn{
     color: #01c4ff;
 }
-
+.top-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 @media only screen and (max-width: 1024px) {
     .menu {
         display: none;

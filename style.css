@@ -13,6 +13,7 @@
     --blue_medium: #01c4ff;
     --blue_medium_light: #72c7ca;
 }
+
 body::-webkit-scrollbar {
     width: 0.6rem;
     background-color: #f6fcff;
@@ -65,6 +66,19 @@ body {
     flex: 1;
 }
 
+.justify-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.justify-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
 
 .align-center {
     align-items: center;
@@ -84,6 +98,14 @@ body {
 
 .uppercase {
     text-transform: uppercase;
+
+}
+
+.card-title .uppercase {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+
 }
 
 .mt-2 {
@@ -221,7 +243,8 @@ nav {
     color: #fff;
     font-size: .9rem;
 }
- .header-btn .header-btn-container a:nth-child(1) {
+
+.header-btn .header-btn-container a:nth-child(1) {
     background-color: #093f4f;
     box-shadow: #72c7ca94 0px 10px 15px;
 }
@@ -238,6 +261,7 @@ nav {
 .header-btn .header-btn-container a:nth-child(2):hover {
     background-color: #6fddff;
 }
+
 .plan-cards {
     gap: 50px;
 }
@@ -258,7 +282,6 @@ nav {
 }
 
 .two {
-    z-index: 2;
     background-color: #eafeff;
     box-shadow: #42454722 0px 48px 100px 0px;
 
@@ -285,14 +308,75 @@ nav {
     color: #01c4ff;
     font-size: 50px;
 }
-.card-btn .btn{
+
+.card-btn .btn {
     color: #01c4ff;
 }
-.top-card{
+
+.top-card {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
+.thin {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.bottom-container {
+    margin-top: 5rem;
+    align-items: center;
+    background-color: #f0faff;
+    border-radius: 0 100px 0 0;
+
+}
+
+.price-btn-conatiner {
+    width: 100%;
+}
+
+.price-btn-conatiner a {
+    font-size: .8rem;
+    color: #fff;
+    padding: 1rem 3rem;
+
+}
+
+.price-btn-conatiner a:nth-child(1) {
+    border-radius: 15px 0 0 15px;
+    background-color: #093f4f;
+    box-shadow: #72c7ca94 0px 10px 15px;
+}
+
+.price-btn-conatiner a:nth-child(2) {
+    box-shadow: #65dbff7a 0px 10px 15px;
+    background-color: #01c4ff;
+    border-radius: 0 15px 0 0;
+}
+
+.footer-container {
+    padding: 0 0 0 3rem;
+    justify-content: space-between;
+}
+
+
+.footer-container .empty span {
+    visibility: hidden;
+
+}
+
+.footer-content {
+    max-width: 1024px;
+    min-height: 350px;
+    align-items: center;
+    background-color: #f0f5ff;
+    border-radius: 100px 0 0 0;
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+
+
 @media only screen and (max-width: 1024px) {
     .menu {
         display: none;
@@ -323,54 +407,102 @@ nav {
         padding: 10px 13px;
     }
 
-   
+
 
     .hamburger {
         font-size: 32px;
         display: block;
     }
-    .container{
+
+    .container {
         padding: 2rem 0;
         flex-direction: column;
 
     }
-    .plan-cards{
+
+    .plan-cards {
         flex-wrap: wrap;
         gap: 16px;
         width: 100%;
-        padding: 0 2rem ;
+        padding: 0 2rem;
         align-items: center;
 
     }
-    .title{
+
+    .title {
         padding: 0 2rem;
     }
-    
-    
+
+    .price-description {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .price-btn-conatiner,.logo-footer {
+        width: auto;
+        padding: 0 2rem;
+    }
+
+    .empty {
+        display: none;
+    }
+    .footer-container{
+        padding: 0;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    .footer-item{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer{
+        width: 100%;
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 640px) {
-    .card{
+    .card {
         width: 100%;
+    }
+    .price-btn-conatiner {
+        flex-direction: column;
+    }
+    .price-btn-conatiner a:nth-child(1) {
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .price-btn-conatiner a:nth-child(2) {
+        border-radius: 0 0 0 15px;
     }
 }
 
 @media (max-width: 768px) {
-    .plan-cards{
-        
-        padding: 0 ;
+    .plan-cards {
+
+        padding: 0;
         gap: 35px;
         flex-direction: column;
         width: 100%;
         align-items: center;
 
     }
-    .container{
+
+
+    .container {
         align-items: center;
     }
 }
-@media (max-width: 835px){
-    .card{
+
+@media (max-width: 835px) {
+    .card {
         width: 350PX;
     }
 }

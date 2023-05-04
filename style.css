@@ -1,0 +1,372 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --blue_dark: #093f4f;
+    --blue_light: #157b9a;
+    --blue_medium: #01c4ff;
+    --blue_medium_light: #72c7ca;
+}
+body::-webkit-scrollbar {
+    width: 0.6rem;
+    background-color: #f6fcff;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #157b9a;
+}
+
+
+body {
+    background: #f6fcff;
+}
+
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.realtive {
+    position: relative;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+
+.align-center {
+    align-items: center;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.btn {
+    padding: 5px 20px;
+    border-radius: 3px;
+
+}
+
+.w-full {
+    width: 100%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--blue_dark);
+    border-style: solid;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-sencondary {
+    color: var(--blue_dark);
+    background-color: var(--blue_medium);
+    border-style: solid;
+    transition: all 0.2s ease-in-out;
+}
+
+header {
+    height: 300px;
+    color: #fff;
+    padding: 0 2rem;
+    margin-left: 3rem;
+    background: linear-gradient(25deg, var(--blue_dark), var(--blue_light));
+    border-bottom-left-radius: 100px;
+}
+
+nav {
+    padding: 1rem 0;
+}
+
+.link-container a {
+    padding: 5px 0;
+    border-bottom: solid 1px #72c7ca00;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    margin-left: 1.5rem;
+}
+
+.link-container a:nth-child(3) {
+    border-bottom: #72c7ca solid 1px;
+}
+
+.link-container a:hover {
+    /* transform: scale(1.1); */
+    border-bottom: #72c7ca solid 1px;
+}
+
+.btn-container {
+    margin-left: 2rem;
+}
+
+.btn-container a {
+    color: #fff;
+    border-radius: 10px;
+
+    transition: all 0.3s ease-in-out;
+    margin-left: 1rem;
+}
+
+.btn-container a:nth-child(1) {
+    border-radius: 10px 10px 0 10px;
+    outline: 1.5px solid #01c4ff;
+}
+
+.btn-container a:nth-child(1):hover {
+    background-color: #01c4ff;
+    transform: translate3d(5px, 15%, 1rem);
+    box-shadow: #01c4ff 0px 5px 15px 0px;
+}
+
+.btn-container a:nth-child(2):hover {
+    color: #fff;
+    box-shadow: #01c4ff 0px 5px 15px 0px;
+}
+
+.btn-container a:nth-child(2) {
+    color: var(--blue_medium);
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 2rem 2rem;
+}
+
+.hero-container div:nth-child(1) h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.hero-container div:nth-child(1) span {
+    color: #01c4ff;
+}
+
+.header-btn .btn-container {
+    display: flex;
+    gap: 0;
+    position: relative;
+
+}
+
+.header-btn .header-btn-container {
+    top: 30%;
+    position: relative;
+}
+
+.header-btn .header-btn-container a:nth-child(-n+2) {
+    transition: all 0.55s ease-in-out;
+    border-radius: 10px;
+    padding: 10px 13px;
+    background-color: #01c4ff;
+    margin: 20px 0 0 0;
+    color: #fff;
+    font-size: .9rem;
+}
+ .header-btn .header-btn-container a:nth-child(1) {
+    background-color: #093f4f;
+    box-shadow: #72c7ca94 0px 10px 15px;
+}
+
+.header-btn .header-btn-container a:nth-child(2) {
+    box-shadow: #65dbff7a 0px 10px 15px;
+}
+
+.header-btn .header-btn-container a:nth-child(1):hover {
+    background-color: #336270;
+    box-shadow: #72c7ca94 0px 10px 15px;
+}
+
+.header-btn .header-btn-container a:nth-child(2):hover {
+    background-color: #6fddff;
+}
+.plan-cards {
+    gap: 50px;
+}
+
+.card {
+    width: 380px;
+    height: 400px;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-radius: 25px 25px 0 25px;
+    transition: all 0.55s ease;
+}
+
+.card:hover {
+
+    box-shadow: #42454722 0px 48px 100px 0px;
+}
+
+.two {
+    z-index: 2;
+    background-color: #eafeff;
+    box-shadow: #42454722 0px 48px 100px 0px;
+
+}
+
+.two:hover {
+    z-index: 2;
+    background-color: #eafeff;
+    box-shadow: #01d0ff22 0px 48px 100px 0px;
+
+}
+
+.card-btn {
+    justify-content: end;
+}
+
+.card-btn span {
+    height: 2px;
+    width: 50px;
+    background-color: #01c4ff;
+}
+
+.icon i {
+    color: #01c4ff;
+    font-size: 50px;
+}
+.card-btn .btn{
+    color: #01c4ff;
+}
+
+@media only screen and (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+
+    header {
+        height: auto;
+        margin: 0;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-items {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .header-btn .header-btn-container {
+        position: relative;
+    }
+
+    .header-btn .header-btn-container a:nth-child(-n+2) {
+        transition: all 0.55s ease-in-out;
+        border-radius: 15px;
+        padding: 10px 13px;
+    }
+
+   
+
+    .hamburger {
+        font-size: 32px;
+        display: block;
+    }
+    .container{
+        padding: 2rem 0;
+        flex-direction: column;
+
+    }
+    .plan-cards{
+        flex-wrap: wrap;
+        gap: 16px;
+        width: 100%;
+        padding: 0 2rem ;
+        align-items: center;
+
+    }
+    .title{
+        padding: 0 2rem;
+    }
+    
+    
+}
+
+@media (max-width: 640px) {
+    .card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .plan-cards{
+        
+        padding: 0 ;
+        gap: 35px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+    }
+    .container{
+        align-items: center;
+    }
+}
+@media (max-width: 835px){
+    .card{
+        width: 350PX;
+    }
+}
